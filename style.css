@@ -1,0 +1,174 @@
+:root {
+    --bs-primary: #F2994A; /* Orange from logo */
+    --bs-primary-rgb: 242, 153, 74;
+    --bs-success: #2F80ED; /* Blue from logo */
+    --bs-success-rgb: 47, 128, 237;
+    --bs-warning: #F2C94C; /* Yellow from logo */
+    --bs-warning-rgb: 242, 201, 76;
+    --bs-info: #F2994A; /* Using orange for info cards as well */
+    --bs-info-rgb: 242, 153, 74;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #e08a40; /* Slightly darker orange */
+    border-color: #e08a40;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+.badge.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.text-success {
+    color: var(--bs-success) !important;
+}
+
+.btn-success {
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+}
+
+.btn-success:hover {
+    background-color: #2a73d9; /* Slightly darker blue */
+    border-color: #2a73d9;
+}
+
+.badge.bg-success {
+    background-color: var(--bs-success) !important;
+}
+
+.text-warning {
+    color: var(--bs-warning) !important;
+}
+
+.btn-warning {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+}
+
+.btn-warning:hover {
+    background-color: #e0b840; /* Slightly darker yellow */
+    border-color: #e0b840;
+}
+
+.badge.bg-warning {
+    background-color: var(--bs-warning) !important;
+}
+
+.text-info {
+    color: var(--bs-info) !important;
+}
+
+.badge.bg-info {
+    background-color: var(--bs-info) !important;
+}
+
+/* Custom styles for card backgrounds to match the logo colors */
+.card.bg-info {
+    background-color: #F2994A !important; /* Orange */
+}
+
+.card.bg-success {
+    background-color: #2F80ED !important; /* Blue */
+}
+
+.card.bg-warning {
+    background-color: #F2C94C !important; /* Yellow */
+}
+
+.card.bg-danger {
+    background-color: #8A2BE2 !important; /* Using a purple for entrepreneurship, as it's a new color not directly from logo but complements */
+}
+
+/* Adjustments for text color on colored cards */
+.card.bg-info .card-text, .card.bg-info .card-title {
+    color: #fff !important;
+}
+
+.card.bg-success .card-text, .card.bg-success .card-title {
+    color: #fff !important;
+}
+
+.card.bg-warning .card-text, .card.bg-warning .card-title {
+    color: #333 !important; /* Darker text for yellow background */
+}
+
+.card.bg-danger .card-text, .card.bg-danger .card-title {
+    color: #fff !important;
+}
+
+/* Hero section specific styles */
+#home .display-4 span {
+    background: linear-gradient(to right, var(--bs-primary), var(--bs-success));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom icon colors for contact section */
+.bi-envelope-fill {
+    color: var(--bs-primary);
+}
+.bi-telephone-fill {
+    color: var(--bs-success);
+}
+.bi-geo-alt-fill {
+    color: var(--bs-warning);
+}
+
+/* Footer social links */
+footer .btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+footer .btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+footer .btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--bs-dark);
+}
+
+/* Custom font for a more friendly look, if desired and loaded */
+/* @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"); */
+/* body { font-family: 'Quicksand', sans-serif; } */
+
+/* Ensure logo is copied to assets folder */
+
+
+
+
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    z-index: 1000;
+}
+
+
